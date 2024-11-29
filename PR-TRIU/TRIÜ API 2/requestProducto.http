@@ -1,0 +1,28 @@
+###
+POST  http://localhost:9001/api/productos HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre":"Atarraya",
+  "stock":45,
+  "cat_productos":"673bfa3ac68287d18b1fd282" 
+}
+
+###
+GET  http://localhost:9001/api/productos HTTP/1.1
+
+###
+GET  http://localhost:9001/api/productos/673bfba064a439bbc82c4bb5 HTTP/1.1
+###
+
+PUT  http://localhost:9001/api/productos/673bfba064a439bbc82c4bb5 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre":"Trucha",
+  "stock":60,
+  "cat_producto":"673bfa3ac68287d18b1fd282" 
+}
+
+###
+DELETE http://localhost:9001/api/productos/673acfddec4faa747f9378da HTTP/1.1
